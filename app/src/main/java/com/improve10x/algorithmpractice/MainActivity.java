@@ -18,12 +18,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         formBtn();
         nThEvenBtn();
+        findDiscountBtn();
+        isDivisibleByFive();
     }
 
     private void formBtn() {
         binding.formBtn.setOnClickListener(view -> {
             Intent intent = new Intent(this, FormActivity.class);
             startActivity(intent);
+
         });
     }
 
@@ -32,6 +35,20 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, NevenActivity.class);
             startActivity(intent);
         });
-
     }
+
+    private void findDiscountBtn() {
+        binding.findDiscountBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, FindDiscountActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void isDivisibleByFive() {
+        binding.divisibleBy5Btn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, IsDivisibleByFive.class);
+            startActivity(intent);
+        });
+    }
+
 }
