@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         nThEvenBtn();
         findDiscountBtn();
         isDivisibleByFive();
+        findFizzBuzzBtn();
     }
 
     private void formBtn() {
@@ -47,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
     private void isDivisibleByFive() {
         binding.divisibleBy5Btn.setOnClickListener(v -> {
             Intent intent = new Intent(this, IsDivisibleByFive.class);
+            startActivity(intent);
+        });
+    }
+
+    private void findFizzBuzzBtn() {
+        binding.findFizzBuzzBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, findFizzBuzz.class);
             startActivity(intent);
         });
     }

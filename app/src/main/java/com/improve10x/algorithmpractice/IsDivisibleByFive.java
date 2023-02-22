@@ -15,6 +15,7 @@ public class IsDivisibleByFive extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityIsDivisibleByFiveBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getSupportActionBar().setTitle("isDivisibleByFive");
         divisibleBy5();
     }
 
