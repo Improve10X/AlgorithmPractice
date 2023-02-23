@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.improve10x.algorithmpractice.databinding.ActivityIsDivisibleByFiveBinding;
 
-public class IsDivisibleByFive extends AppCompatActivity {
+public class IsDivisibleByFiveActivity extends AppCompatActivity {
 
     ActivityIsDivisibleByFiveBinding binding;
 

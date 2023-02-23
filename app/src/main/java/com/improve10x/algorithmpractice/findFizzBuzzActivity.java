@@ -7,7 +7,7 @@ import android.widget.Toast;
 
 import com.improve10x.algorithmpractice.databinding.ActivityFindFizzBuzzBinding;
 
-public class findFizzBuzz extends AppCompatActivity {
+public class findFizzBuzzActivity extends AppCompatActivity {
 
     ActivityFindFizzBuzzBinding binding;
 

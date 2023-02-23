@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         findFizzBuzzBtn();
         lessThanHundred();
         twoMakesTen();
+        integerInRange();
     }
 
     private void formBtn() {
@@ -49,14 +50,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void isDivisibleByFive() {
         binding.divisibleBy5Btn.setOnClickListener(v -> {
-            Intent intent = new Intent(this, IsDivisibleByFive.class);
+            Intent intent = new Intent(this, IsDivisibleByFiveActivity.class);
             startActivity(intent);
         });
     }
 
     private void findFizzBuzzBtn() {
         binding.findFizzBuzzBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(this, findFizzBuzz.class);
+            Intent intent = new Intent(this, findFizzBuzzActivity.class);
             startActivity(intent);
         });
     }
@@ -71,6 +72,13 @@ public class MainActivity extends AppCompatActivity {
     private void twoMakesTen() {
         binding.twoMakesTenBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, TwoMakesTenActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void integerInRange() {
+        binding.integerInRangeBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, IntegerInRangeActivity.class);
             startActivity(intent);
         });
     }
