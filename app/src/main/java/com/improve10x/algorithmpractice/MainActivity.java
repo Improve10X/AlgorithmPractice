@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         findDiscountBtn();
         isDivisibleByFive();
         findFizzBuzzBtn();
+        lessThanHundred();
+        twoMakesTen();
     }
 
     private void formBtn() {
@@ -59,4 +61,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void lessThanHundred() {
+        binding.lessThenHundredBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, LessThenHundredActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void twoMakesTen() {
+        binding.twoMakesTenBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, TwoMakesTenActivity.class);
+            startActivity(intent);
+        });
+    }
 }

@@ -22,11 +22,10 @@ public class findFizzBuzz extends AppCompatActivity {
 
     private void findFizzBuzzOfNumbers() {
         binding.submitBtn.setOnClickListener(v -> {
-             String number = binding.enterNumberTxt.getText().toString();
-             int num = Integer.valueOf(number);
-             String result = findFizzBuzz(num);
+            String number = binding.enterNumberTxt.getText().toString();
+            int num = Integer.valueOf(number);
+            String result = findFizzBuzz(num);
             Toast.makeText(this, String.valueOf(result), Toast.LENGTH_LONG).show();
-
         });
     }
 

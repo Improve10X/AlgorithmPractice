@@ -26,8 +26,6 @@ public class IsDivisibleByFive extends AppCompatActivity {
             boolean result = isDivisibleByFive(number);
             String res = String.valueOf(result);
             binding.resultTxt.setText(res);
-
-
         });
     }
 

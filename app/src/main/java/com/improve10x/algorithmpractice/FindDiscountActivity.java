@@ -27,11 +27,10 @@ public class FindDiscountActivity extends AppCompatActivity {
             double discountPrice = findTheDiscount(number, disc);
             String finalPrice = String.valueOf(discountPrice);
             binding.finalPriceTxt.setText(finalPrice);
-
-
-
         });
     }
+
+
     private static double findTheDiscount(int price, int percentage) {
         double finalPrice = 0;
         double discountAmount = price * percentage / 100;
