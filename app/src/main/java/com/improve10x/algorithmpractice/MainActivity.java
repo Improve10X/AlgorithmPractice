@@ -3,6 +3,7 @@ package com.improve10x.algorithmpractice;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.FeatureInfo;
 import android.os.Bundle;
 
 import com.improve10x.algorithmpractice.databinding.ActivityMainBinding;
@@ -24,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
         lessThanHundred();
         twoMakesTen();
         integerInRange();
+        equalityOfValues();
+        findBomb();
+        nameGreeting();
+        ageToDays();
     }
 
     private void formBtn() {
@@ -79,6 +84,32 @@ public class MainActivity extends AppCompatActivity {
     private void integerInRange() {
         binding.integerInRangeBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, IntegerInRangeActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void equalityOfValues() {
+        Intent intent = new Intent(this, EqualityOfThreeValuesActivity.class);
+        startActivity(intent);
+    }
+
+    private void findBomb() {
+        binding.findBombBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, FindBombActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void nameGreeting() {
+        binding.nameGreetingBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, NameGreetingActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void ageToDays() {
+        binding.ageDaysBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, AgeToDaysActivity.class);
             startActivity(intent);
         });
     }
